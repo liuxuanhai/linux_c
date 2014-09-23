@@ -1,4 +1,4 @@
-#include <sys/socket.h>
+#include <sys/socket.h> 
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
@@ -64,6 +64,7 @@ int main(int argc,char *argv[])
         while(1)
         {
             memset(buf,0,MAXBUF+1);    
+            printf("msg to send:");
             fgets(buf,MAXBUF,stdin);
             len=send(new_fd,buf,strlen(buf)-1,0);
             if(len<0)
