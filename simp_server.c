@@ -7,7 +7,7 @@
 
 #define MAXBUF  1024
 #define PORT    7575
-#define SERVER_IP   "127.0.0.1"
+#define SERVER_IP   "192.168.2.118"
 int main(int argc,char *argv[])
 {
     int sockfd,new_fd;
