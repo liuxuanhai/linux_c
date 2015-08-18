@@ -24,7 +24,7 @@ int main(int argc,char *argv[])
         {
             dup2(fd[1],1);
             close(fd[0]);
-            execlp("ls","ls","/home/tao",(char *)0);
+            execlp("ls","ls","/home",(char *)0);
         }
         else
         {
